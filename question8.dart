@@ -2,11 +2,18 @@
 
 import 'dart:io';
 
-void main(){
+void main() {
+  print("Enter String");
   String? userInput = stdin.readLineSync();
-  checkPalindrome(userInput!);
+  checkPalindrome(userInput ?? "madam");
 }
 
-checkPalindrome(String input){
- 
+checkPalindrome(String input) {
+  String revesedInput = input.split('').reversed.join();
+
+  if (input == revesedInput) {
+    print("String is Palindrome $input == $revesedInput");
+  } else {
+    print("String is Not Palindrome $input != $revesedInput");
+  }
 }
