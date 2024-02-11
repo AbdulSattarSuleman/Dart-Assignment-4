@@ -13,14 +13,14 @@ void main() {
 
 checkUserCredentials({inputEmail, inputPassowrd}) {
   List userEmails = [
-    "abdulsattar@gmail.com",
     "abdul@gmail.com",
-    "abc@gmail.com",
+    "qasim@outlook.com",
+    "fahad@primi.com",
   ];
   List userPasswords = [
-    "abdulsattar@gmail.com",
-    "abdul@gmail.com",
-    "abc@gmail.com",
+    "123-123",
+    "abc-abc",
+    "fahad@123",
   ];
 
   for (var i in userEmails) {
